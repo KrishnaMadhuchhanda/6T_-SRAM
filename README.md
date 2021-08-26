@@ -1,3 +1,4 @@
+
 ### Design of 6T_SRAM.
 
 #### Table of Contents:
@@ -27,6 +28,8 @@ Typical MOS parameters:
    - PMOS: Vt0=-0.66V, up=151 cm^2/Vs
    - Vdd= 5V
    - Wmin= 0.6um, Lmin=0.4um
+   
+      - [Schematic of 6T SRAM Cell](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/S_RAM/Screenshot%202021-08-26%20214325.png)
    
 
     
