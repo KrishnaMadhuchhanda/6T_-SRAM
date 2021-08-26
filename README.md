@@ -1,3 +1,5 @@
+
+
 ### Design of 6T_SRAM.
 
 #### Table of Contents:
@@ -10,8 +12,7 @@
      - [DC_Analysis](#DC_Analysis) 
     - [SNM Hold](#SNM_HOLD)
     - [SNM Read](#SNM_READ)
-    - [SNM Write](#SNM_WRITE)
-
+    
 #### Introduction:
 The project is based on the design of full CMOS SRAM (1K*32bit) 6T_SRAM memory design.
   
@@ -43,8 +44,11 @@ By solving the Id equation of M5 & M3 we can get the equation as:
 
 #### Pre-layout Simulation: 
  - DC_Analysis:
- - SNM Hold:
- - SNM Write:
+ - SNM_Hold:
+![SNM_HOLD](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/hold.png)
+  - SNM_READ:
+![SNM_READ](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/read.png)
+ 
    
 #### Acknowledgements:
 -   Dr.Saroj Rout,Associate Professor,Silicon Institute Of Technology,Bhubaneswar
