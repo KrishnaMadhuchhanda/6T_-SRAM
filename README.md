@@ -27,7 +27,6 @@ Typical MOS parameters:
    - PMOS: Vt0=-0.66V, up=151 cm^2/Vs
    - Vdd= 5V
    - Wmin= 0.6um, Lmin=0.4um
-  [Schematic of 6T SRAM cell](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/sram%20schematic/Screenshot%202021-08-26%20214325.png)
    
 
     
