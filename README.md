@@ -1,5 +1,6 @@
 
 
+
 ### Design of 6T_SRAM.
 
 #### Table of Contents:
@@ -31,6 +32,7 @@ Typical MOS parameters:
   ![Schematic of 6T SRAM cell:](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/sram%20%282%29.png)
 
 #### Modes of Operations:
+
   #### Read Operation:
       In this state initially the bit lines (BL &BLB) are precharged with Vdd,  word line and V2 is connected to Vdd and V1 = 0V value. The main aim of the design for this data read operation is to keep the V1 voltage less than the thresold voltage of the M2 transistor which ensures that the M2 transistor will be turned off during the read operation. M1 transistor will be in linear region and M3 will be in saturation region.
       By solving the Id equation of the respective transistor M1 and M3 we can get the equation(1) as:                                                     
