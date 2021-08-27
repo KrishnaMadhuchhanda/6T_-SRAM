@@ -1,4 +1,3 @@
-
 ### Design of 6T_SRAM.
 
 #### Table of Contents:
@@ -54,10 +53,13 @@ After putting the typical mos parameters values(V1=Vtn=0.49, Vtp=-0.66) in the e
 
 #### Pre-layout Simulation: 
  - DC_Analysis:
+ 
 ![VTC CURVE](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/vtc.png)
  - SNM_Hold:
+
 ![SNM HOLD](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/hold%20%282%29.png)
   - SNM_READ:
+  
 ![SNM READ](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/read%20%282%29.png)
  
    
