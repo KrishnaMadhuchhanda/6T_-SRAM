@@ -1,5 +1,4 @@
 
-
 ### Design of 6T_SRAM.
 
 #### Table of Contents:
@@ -37,7 +36,7 @@ Typical MOS parameters:
   By solving the Id equation of the respective transistor M1 and M3 we can get the equation(1) as:                                                     
 ![Equation will be:](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/Eq-1.jpeg)
  
-   After putting the values of all typical mos parameters( V1 as Vtn=0.49) we can get the design constraint and M1 will be stronger than M3.
+   After putting the values of all typical mos parameters( V1 as Vtn=0.49) we can get the design constraint
    ![equation-03](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/Eq-4.jpeg)
    
 
