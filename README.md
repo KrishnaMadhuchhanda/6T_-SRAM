@@ -1,5 +1,4 @@
 
-
 ### Design of 6T_SRAM Cell in 0.5um SCMOS Technology.
 
 #### Table of Contents:
@@ -22,10 +21,11 @@ SRAM(Static Read Access Memory) is a volatile memory i.e data is lost when power
 - Specifications:
    Memory Size - 1k*32-bit,  Technology file - 0.5um SCMOS Technology, Operating voltage - 5V
 - Block diagram and circuit diagram of 6T SRAM Cell:
-![BLOCK DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_BLOCKDIAGRAM.png) ![CKT DIAGRAM OF SRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/sramnew%20%282%29.png)
+![BLOCK DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_BLOCKDIAGRAM.png) 
+![SRAM CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM.png)
 
 ### Modes of Operations:
-![FIG-A(READ OPERATION)](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_READ2.png) FIG-A (READ_OPEARTION) ![FIG-B WRITE OPERATION](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_WRITE2.png)
+![SRAM_READ](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_READ.png) FIG-A (READ_OPERATION) ![SRAM_WRITE](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_WRITE.png)
 FIG-B(WRITE_OPERATION)
 
 - Read Operation:
@@ -51,19 +51,19 @@ w5/w3 < 0.654
   It helps to know the stability of the SRAM cell. It is the lowest voltage noise that can flip the state of the SRAM cell and it can be obtained by plotting the butterfly curve(it is the curve between two voltage transfer characteristics of the two respective converter) and by finding the maximum possible square between them and the length of the sides gives SNM. Greater SNM leads to better stability.
         - HNM(HOLD_NOISE_MARGIN):
    In this state word line is absent and the SRAM will store the previous data.
-   ![SNM_HOLD](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/holdnew.png)
+   ![HNM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/HNM.png)
 
    - RNM(READ_NOISE_MARGIN):
     In this state the read margin is used to find the read stability. Read stability is the ability to prevent the SRAM cell to flip the stored value while stored value is being read.
-    ![RNM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/readnew%20%282%29.png)
+    ![RNM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/RNM.png)
 
 #### TRANSIENT ANALYSIS:
- ![TRANSIENT CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/tran%20ckt%20diagram%20%282%29.png)
+ ![TRANSIENT CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20CKT%20DIAGRAM.png)
 
 In the above circuit diagram consists of SRAM_6T cell with all its parasitics, precharged circuit, sense amplifier and write driver. Here the the SRAM size is 1k*32 bit, so the no of rows and column can be taken as 128 no of rows and 256 no of column. Here the parasitic capacitor of 6T SRAM such as word line wire load capacitance  and bit line, bit line bar wire load capacitance are connected to the above circuit diagram and these individual capacitances are of 10f. The mosfets (	M9,M8 & M6,M7) which are present in the above circuit diagram is parasitic mosfet which is likely do the operation like 1k*32 bit cell.
 
 The resulted output is given below:
-![output](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/main%20trans%20%282%29.png)
+![TRANS_ANALYSIS WITHOUT SENSE_AMPLIFIER AND WRITE_DRIVER](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20WITHOUT%20SENSE%20AMPLIFIER%20AND%20WRITE%20DRIVER.png)
 
 #### SENSE_AMPLIFIER:
 Its a differential circuit amplifier which acts as a comparator and senses the voltage difference between bit line and bit line bar and used to detect the node voltage stored in the memory during the read operation.
@@ -76,8 +76,7 @@ The write driver is used to drive the input signal into the into the bit cell du
 ![WRITE_DRIVER CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_WRITEDRIVER.png)
 
 #### SIMULATION OF 6T SRAM CELL WITH SENSE_AMPLIFIER & WRITE_DRIVER:
-
-![SIMULATION RESULT](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/final%20trans%20with%20sa%20and%20wd.png)
+![SIMULATION_RESULT](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20WITH%20SENSE_AMPLIFIER%20&%20WRITW_DRIVER.png)
 
 #### Transistor Sizing:
 Typical MOS parameters values which i have taken for the calculation purpose
