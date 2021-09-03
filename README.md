@@ -1,4 +1,5 @@
 
+
 ### Design of 6T_SRAM Cell in 0.5um SCMOS Technology.
 
 #### Table of Contents:
@@ -10,9 +11,9 @@
       - [SENSE AMPLIFIER](#Sense_amplifier)
       - [WRITE DRIVER](#Write_Driver)
       - [ Transient Simulation of 6T-SRAM cell with sense amplifier and write driver](#Transient_Simulation_of_6T_SRAM_cell_with_sense_amplifier_and_write_driver)
-    - [Transistor Sizing](#Transistor_Sizing)
-    - [Future work](#Future_work)
-    - [Acknowledgement](#Acknowledgement) 
+   - [Transistor Sizing](#Transistor_Sizing)
+  - [Future work](#Future_work)
+   - [Acknowledgement](#Acknowledgement) 
     
 ### 6T SRAM DESIGN:
 The project is mainly based on the design of full CMOS SRAM (1K*32bit) 6T_SRAM memory design.
