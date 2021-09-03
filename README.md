@@ -21,7 +21,8 @@ SRAM(Static Read Access Memory) is a volatile memory i.e data is lost when power
 - Specifications:
    Memory Size - 1k*32-bit,  Technology file - 0.5um SCMOS Technology, Operating voltage - 5V
 - Block diagram and circuit diagram of 6T SRAM Cell:
-![BLOCK DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_BLOCKDIAGRAM.png) 
+![BLOCK DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM_BLOCKDIAGRAM.png)
+ 
 ![SRAM CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/SRAM.png)
 
 ### Modes of Operations:
@@ -60,10 +61,10 @@ w5/w3 < 0.654
 #### TRANSIENT ANALYSIS:
  ![TRANSIENT CKT DIAGRAM](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20CKT%20DIAGRAM.png)
 
-In the above circuit diagram consists of SRAM_6T cell with all its parasitics, precharged circuit, sense amplifier and write driver. Here the the SRAM size is 1k*32 bit, so the no of rows and column can be taken as 128 no of rows and 256 no of column. Here the parasitic capacitor of 6T SRAM such as word line wire load capacitance  and bit line, bit line bar wire load capacitance are connected to the above circuit diagram and these individual capacitances are of 10f. The mosfets (	M9,M8 & M6,M7) which are present in the above circuit diagram is parasitic mosfet which is likely do the operation like 1k*32 bit cell.
+In the above circuit diagram consists of SRAM_6T cell with all its parasitics, precharged circuit, sense amplifier and write driver. Here the the SRAM size is 1k* 32 bit,  so the no of rows and column can be taken as 128 no of rows and 256 no of column. Here the parasitic capacitor of 6T SRAM such as word line wire load capacitance  and bit line, bit line bar wire load capacitance are connected to the above circuit diagram and these individual capacitances are of 10f. The mosfets (	M9,M8 & M6,M7) which are present in the above circuit diagram is parasitic mosfet which is likely do the operation like 1k*32 bit cell.
 
 The resulted output is given below:
-![TRANS_ANALYSIS WITHOUT SENSE_AMPLIFIER AND WRITE_DRIVER](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20WITHOUT%20SENSE%20AMPLIFIER%20AND%20WRITE%20DRIVER.png)
+![TRANSIENT WITHOUT SENSE AMPLIFIER AND WRITE DRIVER](https://github.com/KrishnaMadhuchhanda/6T_-SRAM/blob/main/Diagrams/TRANS%20WITHOUT%20SENSE%20AMPLIFIER%20AND%20WRITE%20DRIVER.png)
 
 #### SENSE_AMPLIFIER:
 Its a differential circuit amplifier which acts as a comparator and senses the voltage difference between bit line and bit line bar and used to detect the node voltage stored in the memory during the read operation.
